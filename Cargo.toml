@@ -1,0 +1,21 @@
+[package]
+name = "layang"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "layang"
+path = "src/main.rs"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+dirs = "5"
+tempfile = "3"
+anyhow = "1"
+rpassword = "7"
